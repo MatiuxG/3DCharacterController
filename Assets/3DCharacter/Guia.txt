@@ -1,0 +1,23 @@
+Guía rápida para usar el personaje
+
+1. Asegúrate de tener los siguientes scripts en el mismo GameObject del jugador:
+   - PlayerManager
+   - PlayerLocomotion
+   - InputManager
+   - AnimatorManager
+   - (y un Rigidbody)
+
+   [O puedes usar el prefab]
+
+2. ¡IMPORTANTE!
+   Debes importar y asignar correctamente la librería del InputManager, ya que maneja TODO el control del jugador:
+
+3. Controles básicos:
+   - Movimiento: WASD o Stick Izquierdo
+   - Cámara: Mouse o Stick Derecho
+   - Correr: Shift Izquierdo o Stick Izquierdo (presionar)
+   - Saltar: Espacio o Botón Sur (A)
+
+4. No olvides:
+   - El objeto de cámara debe tener el script CameraManager para seguir y rotar correctamente.
+   - El Animator del jugador debe tener los parámetros: isGrounded, isJumping, isFalling, isInteracting, Horizontal, Vertical.
